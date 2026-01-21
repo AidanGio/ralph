@@ -3,3 +3,9 @@ logs/
 
 # Branch tracking
 .last-branch
+
+# PRD
+prd.json
+
+# Progress
+progress.txt
