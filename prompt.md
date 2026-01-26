@@ -87,7 +87,9 @@ Only update AGENTS.md if you have **genuinely reusable knowledge** that would he
 
 ## Quality Gates (Required Before Commit)
 
-Detect project type and run the appropriate checks. These are best-effort but required:
+Detect project type and run the appropriate checks. If `check-quality.sh` exists in your `ralph/` directory, use it first.
+
+**Best-effort checks:**
 
 **If `package.json` exists (Node.js/TypeScript):**
 ```bash

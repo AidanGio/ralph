@@ -1,0 +1,177 @@
+{
+  "project": "Jacqueline's Blog",
+  "branchName": "ralph/mvp-initial",
+  "description": "Romance book blog MVP - Modern Next.js site with book reviews and elegant design",
+  "userStories": [
+    {
+      "id": "US-001",
+      "title": "Initialize Next.js project with TypeScript",
+      "description": "As a developer, I need a modern web framework set up so I can build the blog efficiently.",
+      "acceptanceCriteria": [
+        "Next.js 14+ project initialized with TypeScript",
+        "Tailwind CSS configured",
+        "Project structure created (components, app, lib folders)",
+        "ESLint and Prettier configured",
+        "Git repository initialized and connected to GitHub",
+        "Typecheck/lint passes"
+      ],
+      "priority": 1,
+      "passes": true,
+      "notes": ""
+    },
+    {
+      "id": "US-002",
+      "title": "Create responsive layout with header and footer",
+      "description": "As a user, I want a clean navigation experience across all pages.",
+      "acceptanceCriteria": [
+        "Header component with site title 'Jacqueline's Book Blog' and navigation",
+        "Navigation links: Home, Reviews, About, Contact",
+        "Footer with social media links (Instagram, TikTok, Goodreads placeholders)",
+        "Mobile-responsive hamburger menu",
+        "Elegant typography (consider fonts like Playfair Display or Cormorant)",
+        "Typecheck/lint passes",
+        "Verify in browser using agent-browser skill"
+      ],
+      "priority": 2,
+      "passes": true,
+      "notes": ""
+    },
+    {
+      "id": "US-003",
+      "title": "Design and implement homepage",
+      "description": "As a visitor, I want an engaging homepage that showcases recent reviews.",
+      "acceptanceCriteria": [
+        "Hero section with welcome message and site tagline",
+        "Featured book reviews section (3-4 recent posts)",
+        "Each review card shows: cover image, title, author, rating, excerpt",
+        "'View All Reviews' CTA button",
+        "About section preview with photo and short bio",
+        "Newsletter signup section",
+        "Typecheck/lint passes",
+        "Verify in browser using agent-browser skill"
+      ],
+      "priority": 3,
+      "passes": true,
+      "notes": ""
+    },
+    {
+      "id": "US-004",
+      "title": "Create book review card component",
+      "description": "As a user, I want consistent book review displays across the site.",
+      "acceptanceCriteria": [
+        "Reusable BookReviewCard component",
+        "Props: coverImage, title, author, rating (5-star display), excerpt, postUrl",
+        "Hover effects (subtle shadow/scale)",
+        "Responsive grid layout",
+        "Rating displayed as stars (filled/half/empty)",
+        "Typecheck/lint passes",
+        "Verify in browser using agent-browser skill"
+      ],
+      "priority": 4,
+      "passes": true,
+      "notes": ""
+    },
+    {
+      "id": "US-005",
+      "title": "Build book review page template",
+      "description": "As a reader, I want to read full book reviews with all details.",
+      "acceptanceCriteria": [
+        "Review page layout: cover image, title, author, rating",
+        "Full review text with proper typography",
+        "Metadata: genre, tropes, heat level, publication date",
+        "'Buy Now' links (Amazon, Bookshop.org placeholders)",
+        "Previous/Next review navigation",
+        "Share buttons (Twitter/X, Pinterest placeholders)",
+        "Typecheck/lint passes",
+        "Verify in browser using agent-browser skill"
+      ],
+      "priority": 5,
+      "passes": true,
+      "notes": ""
+    },
+    {
+      "id": "US-006",
+      "title": "Create About page",
+      "description": "As a visitor, I want to learn about Jacqueline and her reading preferences.",
+      "acceptanceCriteria": [
+        "About page route",
+        "Hero section with profile photo placeholder",
+        "Bio text (placeholder copy about romance booktok creator)",
+        "'My Favorite Tropes' section",
+        "'Currently Reading' section",
+        "Social media links",
+        "Typecheck/lint passes",
+        "Verify in browser using agent-browser skill"
+      ],
+      "priority": 6,
+      "passes": true,
+      "notes": ""
+    },
+    {
+      "id": "US-007",
+      "title": "Build Reviews listing page",
+      "description": "As a user, I want to browse all book reviews.",
+      "acceptanceCriteria": [
+        "Reviews page showing all reviews in grid",
+        "Sort options: Recent, Rating (high to low), Title (A-Z)",
+        "Filter by genre/trope (placeholder categories)",
+        "Pagination or infinite scroll",
+        "Search bar (basic filter by title/author)",
+        "Typecheck/lint passes",
+        "Verify in browser using agent-browser skill"
+      ],
+      "priority": 7,
+      "passes": true,
+      "notes": ""
+    },
+    {
+      "id": "US-008",
+      "title": "Add sample content (seed data)",
+      "description": "As a developer, I need sample book reviews to test the site.",
+      "acceptanceCriteria": [
+        "Create 5-6 sample book review MDX files or JSON data",
+        "Include popular romance titles (e.g., 'The Love Hypothesis', 'Beach Read', 'People We Meet on Vacation')",
+        "Each has: cover URL, rating, full review text, metadata",
+        "Sample data loads on all pages correctly",
+        "Typecheck/lint passes"
+      ],
+      "priority": 8,
+      "passes": true,
+      "notes": ""
+    },
+    {
+      "id": "US-009",
+      "title": "Implement color scheme and theming",
+      "description": "As a user, I want a cohesive, romance-themed visual design.",
+      "acceptanceCriteria": [
+        "Color palette: soft pinks, purples, or warm neutrals with good contrast",
+        "Custom Tailwind theme configured",
+        "Consistent button styles",
+        "Link hover states",
+        "Card shadows and spacing",
+        "Typography hierarchy (headings, body, captions)",
+        "Typecheck/lint passes",
+        "Verify in browser using agent-browser skill"
+      ],
+      "priority": 9,
+      "passes": true,
+      "notes": ""
+    },
+    {
+      "id": "US-010",
+      "title": "Deploy to Vercel",
+      "description": "As a developer, I need the site live and accessible.",
+      "acceptanceCriteria": [
+        "Vercel project created and linked to GitHub repo",
+        "Automatic deployments on push to main",
+        "Custom domain configured (if available) or use Vercel subdomain",
+        "Environment variables set if needed",
+        "Build succeeds and site is live",
+        "Site loads correctly at production URL"
+      ],
+      "priority": 10,
+      "passes": true,
+      "notes": "Deployment configuration complete: vercel.json created, README updated with deployment instructions. Actual deployment requires manual steps via Vercel Dashboard or CLI (standard workflow). Build verified successful in previous iterations."
+    }
+  ]
+}
